@@ -156,7 +156,7 @@ class Window(QMainWindow):
             LHipYawPitch = Joint(name=self.sliders.SldLHipYawPitch.name,
                                  range_list=self.sliders.SldLHipYawPitch.slider_range,
                                  slider=self.sliders.SldLHipYawPitch)
-            LShoulderRoll = Joint(SLD=self.sliders.SldLShoulderPitch)
+            LShoulderRoll = Joint(SLD=self.sliders.SldLShoulderRoll)
             RShoulderRoll = Joint(SLD=self.sliders.SldRShoulderRoll)
             LElbowYaw = Joint(SLD=self.sliders.SldLElbowYaw)
             RElbowYaw = Joint(SLD=self.sliders.SldRElbowYaw)
