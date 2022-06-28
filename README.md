@@ -13,4 +13,5 @@ colcon build --packages-select pose_design
 2. ros2 run nao_lola nao_lola
 
 . install/setup.bash
+
 ros2 run pose_design PoseDesign
