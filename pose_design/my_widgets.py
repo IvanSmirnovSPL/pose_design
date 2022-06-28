@@ -16,7 +16,6 @@ class MySlider():
         self.window = window
         self.point = point
         self.slider_range = list(slider_range)
-        print(self.slider_range)
         self.button_apply = button_apply
         self.name = name
         self.make_line()
