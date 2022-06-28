@@ -15,7 +15,8 @@ class MySlider():
     def __init__(self, window, button_apply, point, slider_range, name):
         self.window = window
         self.point = point
-        self.slider_range = slider_range
+        self.slider_range = list(slider_range)
+        print(self.slider_range)
         self.button_apply = button_apply
         self.name = name
         self.make_line()
@@ -33,7 +34,7 @@ class MySlider():
     def make_line(self):
         self.line = QLineEdit(self.window)
         self.line.move(self.point.x, self.point.y + 30)
-        self.line.setText(str(0))
+        self.line.setText(str(int((self.slider_range[0] + self.slider_range[-1])/2)))
 
     def make_slider(self):
         self.slider = QSlider(Qt.Horizontal, self.window)
