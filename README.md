@@ -9,6 +9,8 @@ colcon build --packages-select pose_design
 
 #How to run (another terminal)
 
-. install/setup.bash
+1. start webots, run world nao_robocup.wbt
+2. ros2 run nao_lola nao_lola
 
+. install/setup.bash
 ros2 run pose_design PoseDesign
